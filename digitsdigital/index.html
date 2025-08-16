@@ -19,9 +19,9 @@
       "telephone": "+263-77-123-4567",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "123 Enterprise Road",
+        "streetAddress": "harare",
         "addressLocality": "Harare",
-        "postalCode": "00263",
+        "postalCode": "0000",
         "addressCountry": "ZW"
       },
       "geo": {
@@ -47,6 +47,7 @@
     
     <title>Digits Digital | Zimbabwe's Premier Digital Marketing Agency</title>
     
+    <link href="file:///c:/Users/user/Bootstrap Crash Course/bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     
@@ -236,6 +237,7 @@
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
             border: none;
             margin-bottom: 30px;
+            padding: 1rem;
         }
         
         .service-card:hover {
@@ -313,6 +315,7 @@
             border-radius: 50px;
             padding: 14px;
             transition: all 0.3s ease;
+            color:#ddd;
         }
         
         .lead-form .btn:hover {
@@ -580,12 +583,14 @@
         </div>
     </nav>
 
+    
+
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
-                    <h1>Grow Your Brand. <span class="text-primary">Dominate Digital.</span></h1>
+                    <h1>Grow Your Brand <span class="text-primary">Dominate Digital.</span></h1>
                     <p>Digits Digital is Zimbabwe's premier digital marketing agency. We help businesses like yours reach new heights with data-driven strategies and creative solutions.</p>
                     <a href="#contact" class="btn btn-primary">Book a Free Strategy Call</a>
                 </div>
@@ -608,7 +613,7 @@
             </div>
             
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-chart-line"></i>
@@ -620,7 +625,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-hashtag"></i>
@@ -631,8 +636,20 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="card-body text-center">
+                            <h3>Website Design</h3>
+                            <p>Beautiful, responsive websites optimized for performance, conversions, and search engines.</p>
+                        </div>
+                    </div>
+                </div>                
                 
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-pen-fancy"></i>
@@ -644,19 +661,8 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Website Design</h3>
-                            <p>Beautiful, responsive websites optimized for performance, conversions, and search engines.</p>
-                        </div>
-                    </div>
-                </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-palette"></i>
@@ -668,7 +674,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="service-card">
                         <div class="service-icon">
                             <i class="fas fa-search"></i>
@@ -689,25 +695,36 @@
             <div class="row">
                 <div class="col-lg-6 lead-content">
                     <h2>Ready to Transform Your Digital Presence?</h2>
-                    <p>Schedule a free 30-minute strategy session with our digital experts. We'll analyze your current approach and provide actionable insights to grow your business.</p>
+                    <p>Schedule a free 15-minute strategy session with our digital experts. We'll analyze your current approach and provide actionable insights to grow your business.</p>
                     
-                    <div class="lead-form">
-                        <form>
+                    <!-- <div class="lead-form">
+                        <form id="customForm">
                             <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" class="form-control" placeholder="Your Name" name="entry.2005620554" required>
                             </div>
                             <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone Number" required>
+                                <input type="tel" class="form-control" placeholder="Phone Number" name="entry.1166974658" required>
                             </div>
                             <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address" required>
+                                <input type="email" class="form-control" placeholder="Email Address" name="entry.1045781291" required>
                             </div>
-                            <button type="submit" class="btn">Book My Free Strategy Call</button>
+                            <button type="submit" >Book My Free Strategy Call</button>
+                            
                         </form>
-                    </div>
+                        <p id="status"></p>
+                    </div> -->
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?usp=header" 
+                    class="btn btn-dark p-3 fw-bolder bs-popover-bottom">Book A Free Strategy Call</a>
+
+
                     
+
+
+                   <!--  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?embedded=true"
+                     width="340" height="389" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                     -->
                     <p class="mt-4">Prefer WhatsApp? Chat with us instantly:</p>
-                    <a href="https://wa.me/263771234567" class="whatsapp-btn">
+                    <a href="https://wa.me/263776611049" class="whatsapp-btn">
                         <i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp
                     </a>
                 </div>
@@ -715,23 +732,69 @@
         </div>
     </section>
 
-    <!-- Video Section -->
-    <section id="video" class="video-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Digital Marketing <span class="text-primary">Insights</span></h2>
-                <p>Watch our latest tips and strategies for Zimbabwean businesses</p>
-            </div>
+
+    <!-- <section id="video" class="video-section">
+    
+        <div class="section-title">
+            <h2>Digital Marketing <span class="text-primary">Insights</span></h2>
+            <p>Watch our latest tips and strategies for Zimbabwean businesses</p>
+        </div>
+    
+        <div class="carousel slide" id="myCarousel" data-bs-ride="carousel" >
             
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/lDolY5C8Bv0" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="carousell-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
+            </div>
+    
+           
+            <div class="carousel-inner">
+    
+                <div class="carousel-item active pe-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/fvIECE9nVqk" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item pe-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/fvIECE9nVqk" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="carousel-item pe-2">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/y_jn5mBswuY" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" 
+                    style="background-color: orangered; border-radius: 50%;"
+                ></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"
+                style="background-color: orangered; border-radius: 50%;"
+                ></span>
+            </button>
         </div>
     </section>
+ -->
 
     <!-- Why Choose Us Section -->
     <section id="why-us" class="why-us">
@@ -766,7 +829,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6">
+<!--                 <div class="col-md-6">
                     <div class="feature-box">
                         <div class="feature-icon">
                             <i class="fas fa-users"></i>
@@ -776,7 +839,7 @@
                             <p>You'll have a dedicated expert who knows your business inside out and is committed to your success.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="col-md-6">
                     <div class="feature-box">
@@ -790,7 +853,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-6">
+<!--                 <div class="col-md-6">
                     <div class="feature-box">
                         <div class="feature-icon">
                             <i class="fas fa-trophy"></i>
@@ -800,7 +863,7 @@
                             <p>We've helped dozens of Zimbabwean businesses achieve remarkable growth and digital transformation.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 
                 <div class="col-md-6">
                     <div class="feature-box">
@@ -818,7 +881,9 @@
     </section>
 
     <!-- Testimonials -->
-    <section id="testimonials" class="testimonials">
+    <section id="testimonials" class="testimonials"
+    style="display: none; height: 0;"
+    >
         <div class="container">
             <div class="section-title">
                 <h2>Client <span class="text-primary">Success Stories</span></h2>
@@ -899,7 +964,7 @@
                     <h5>Digits Digital</h5>
                     <p class="mb-4">Zimbabwe's premier digital marketing agency helping businesses grow and dominate their digital landscape.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.facebook.com/share/1CMWmmcsLk/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
                         <a href="#"><i class="fab fa-linkedin-in"></i></a>
@@ -921,10 +986,10 @@
                 <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
                     <h5>Contact Us</h5>
                     <ul class="footer-links">
-                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Enterprise Road, Harare</li>
-                        <li><i class="fas fa-phone me-2"></i> +263 77 123 4567</li>
+                        <!-- <li><i class="fas fa-map-marker-alt me-2"></i> 123 Enterprise Road, Harare</li> -->
+                        <li><i class="fas fa-phone me-2"></i> +263 77 661 1049</li>
                         <li><i class="fas fa-envelope me-2"></i> info@digitsdigital.co.zw</li>
-                        <li><i class="fab fa-whatsapp me-2"></i> +263 77 891 2345</li>
+                        <li><i class="fab fa-whatsapp me-2"></i> +263 77 661 1049</li>
                     </ul>
                 </div>
                 
@@ -939,12 +1004,38 @@
             </div>
             
             <div class="copyright text-center">
-                <p class="mb-0">&copy; 2023 Digits Digital. All Rights Reserved. Designed with <i class="fas fa-heart text-primary"></i> in Zimbabwe</p>
+                <p class="mb-0">&copy; 2025 Digits Digital. All Rights Reserved. Designed with <i class="fas fa-heart text-primary"></i> in Zimbabwe</p>
             </div>
         </div>
     </footer>
 
+    <script>
+  document.getElementById('customForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default reload
+
+    const form = e.target;
+    const formData = new FormData(form);
+    console.log("About to fetched")
+
+
+    fetch("https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/formResponse", {
+      method: "POST",
+      mode: "no-cors", // required
+      body: formData
+    }).then(() => {
+     console.log("Just sending now")
+      document.getElementById('status').innerText = "Submitted successfully!";
+      form.reset();
+    }).catch(() => {
+        console.log("Submitting Failed")
+      document.getElementById('status').innerText = "Submission failed.";
+    });
+  });
+</script>
+
+
     <!-- Bootstrap JS -->
+     <script src="c:\Users\user\Bootstrap Crash Course\bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <!-- Smooth Scrolling -->
