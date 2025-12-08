@@ -6,20 +6,19 @@
     <meta name="description" content="Digits Digital - Zimbabwe's leading digital marketing agency. Grow your brand and dominate digital with our expert services.">
     <meta name="keywords" content="digital marketing, Zimbabwe, social media, SEO, web design, content creation">
     <meta name="author" content="Digits Digital">
-    
-    <!-- Schema.org markup for Google -->
+
+    <!-- Schema.org (Google Rich Results) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "ProfessionalService",
       "name": "Digits Digital",
-      "image": "https://example.com/logo.png",
-      "@id": "",
+      "image": "https://digitsdigital.co.zw/static/logo.png",
       "url": "https://digitsdigital.co.zw",
-      "telephone": "+263-77-123-4567",
+      "telephone": "+263776611049",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "harare",
+        "streetAddress": "Harare",
         "addressLocality": "Harare",
         "postalCode": "0000",
         "addressCountry": "ZW"
@@ -31,560 +30,54 @@
       },
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday"
-        ],
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
         "opens": "08:00",
         "closes": "17:00"
       },
       "priceRange": "$$$"
     }
     </script>
-    
+
     <title>Digits Digital | Zimbabwe's Premier Digital Marketing Agency</title>
-    
-    <link href="file:///c:/Users/user/Bootstrap Crash Course/bootstrap-5.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap CSS -->
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    
-    <style>
-        :root {
-            --primary: #FF6600;
-            --primary-dark: #e65c00;
-            --secondary: #000000;
-            --light: #ffffff;
-            --gray: #f8f9fa;
-            --dark-gray: #6c757d;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--secondary);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        
-        h1, h2, h3, h4, h5 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-        }
-        
-        .text-primary {
-            color: var(--primary) !important;
-        }
-        
-        .bg-primary {
-            background-color: var(--primary) !important;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary);
-            border-color: var(--primary);
-            padding: 12px 28px;
-            font-weight: 600;
-            border-radius: 50px;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-primary:hover {
-            background-color: var(--primary-dark);
-            border-color: var(--primary-dark);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 102, 0, 0.2);
-        }
-        
-        .btn-outline-primary {
-            color: var(--primary);
-            border-color: var(--primary);
-            border-radius: 50px;
-            padding: 12px 28px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-        
-        .btn-outline-primary:hover {
-            background-color: var(--primary);
-            color: var(--light);
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(255, 102, 0, 0.2);
-        }
-        
-        /* Navbar */
-        .navbar {
-            padding: 20px 0;
-            transition: all 0.4s ease;
-            background-color: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-        
-        .navbar-brand {
-            font-weight: 800;
-            font-size: 28px;
-            color: var(--secondary) !important;
-        }
-        
-        .navbar-brand span {
-            color: var(--primary);
-        }
-        
-        .nav-link {
-            font-weight: 500;
-            margin: 0 10px;
-            color: var(--secondary) !important;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-        
-        .nav-link:hover, .nav-link.active {
-            color: var(--primary) !important;
-        }
-        
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background-color: var(--primary);
-            transition: width 0.3s ease;
-        }
-        
-        .nav-link:hover::after, .nav-link.active::after {
-            width: 100%;
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 150px 0 100px;
-            background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.9) 100%), 
-                        url('https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .hero::before {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 150px;
-            background: linear-gradient(to top, var(--light), transparent);
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-            line-height: 1.2;
-        }
-        
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-        }
-        
-        /* Services */
-        .services {
-            padding: 100px 0;
-            background-color: var(--light);
-        }
-        
-        .section-title {
-            position: relative;
-            margin-bottom: 60px;
-            text-align: center;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 15px;
-        }
-        
-        .section-title p {
-            color: var(--dark-gray);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .service-card {
-            background: var(--light);
-            border-radius: 15px;
-            overflow: hidden;
-            height: 100%;
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            border: none;
-            margin-bottom: 30px;
-            padding: 1rem;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-        }
-        
-        .service-icon {
-            width: 80px;
-            height: 80px;
-            background: rgba(255, 102, 0, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 30px auto 20px;
-            color: var(--primary);
-            font-size: 30px;
-        }
 
-        /*Insigts Section  */
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/digitsdigital.css">
 
-        .insight-video {
-            
-            display: flex;
-            justify-content: center;
+    <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+    <meta property="og:title" content="Digits Digital | Zimbabwe's Premier Digital Marketing Agency">
+    <meta property="og:description" content="Grow your brand and dominate digital with data-driven marketing, social media management, and website design.">
+    <meta property="og:image" content="https://digitsdigital.co.zw/static/logo.png">
+    <meta property="og:url" content="https://digitsdigital.co.zw">
+    <meta property="og:type" content="website">
 
-        }
-
-        .insight-video video {
-            border-radius: 20px;
-            width: 50%;
-            min-width: 310px;
-        }
-
-        
-        /* Lead Capture */
-        .lead-section {
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: var(--light);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .lead-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80') center/cover no-repeat;
-            opacity: 0.1;
-        }
-        
-        .lead-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .lead-section h2 {
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-        
-        .lead-section p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-        }
-        
-        .lead-form .form-control {
-            height: 55px;
-            border-radius: 50px;
-            padding: 0 25px;
-            border: none;
-            margin-bottom: 15px;
-        }
-        
-        .lead-form .form-control:focus {
-            box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
-        }
-        
-        .lead-form .btn {
-            width: 100%;
-            background: var(--secondary);
-            border: none;
-            font-weight: 600;
-            border-radius: 50px;
-            padding: 14px;
-            transition: all 0.3s ease;
-            color:#ddd;
-        }
-        
-        .lead-form .btn:hover {
-            background: #333;
-            transform: translateY(-3px);
-        }
-        
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            background: #25D366;
-            color: white !important;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-        
-        .whatsapp-btn:hover {
-            background: #128C7E;
-            transform: translateY(-3px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-        }
-        
-        /* Video Section */
-        .video-section {
-            padding: 100px 0;
-            background-color: var(--gray);
-        }
-        
-        .video-container {
-            position: relative;
-            border-radius: 15px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.1);
-            height: 0;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-        }
-        
-        .video-container iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: none;
-        }
-        
-        /* Why Choose Us */
-        .why-us {
-            padding: 100px 0;
-            background-color: var(--light);
-        }
-        
-        .feature-box {
-            display: flex;
-            margin-bottom: 40px;
-        }
-        
-        .feature-icon {
-            flex: 0 0 70px;
-            height: 70px;
-            background: rgba(255, 102, 0, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 20px;
-            color: var(--primary);
-            font-size: 24px;
-        }
-        
-        .feature-content h3 {
-            margin-bottom: 10px;
-            font-size: 1.5rem;
-        }
-        
-        /* Testimonials */
-        .testimonials {
-            padding: 100px 0;
-            background: linear-gradient(135deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.05) 100%);
-        }
-        
-        .testimonial-card {
-            background: var(--light);
-            border-radius: 15px;
-            padding: 30px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-            margin: 20px;
-            position: relative;
-        }
-        
-        .testimonial-card::before {
-            content: """;
-            position: absolute;
-            top: -30px;
-            left: 20px;
-            font-size: 120px;
-            color: rgba(255, 102, 0, 0.1);
-            font-family: Georgia, serif;
-            line-height: 1;
-        }
-        
-        .testimonial-content {
-            position: relative;
-            z-index: 2;
-        }
-        
-        .client-info {
-            display: flex;
-            align-items: center;
-            margin-top: 20px;
-        }
-        
-        .client-img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            overflow: hidden;
-            margin-right: 15px;
-            background: #ddd;
-        }
-        
-        .client-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        
-        /* Footer */
-        .footer {
-            background: var(--secondary);
-            color: var(--light);
-            padding: 80px 0 0;
-        }
-        
-        .footer h5 {
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-        
-        .footer h5::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 2px;
-            background: var(--primary);
-        }
-        
-        .footer-links li {
-            margin-bottom: 12px;
-            list-style: none;
-        }
-        
-        .footer-links a {
-            color: #ddd;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-        
-        .footer-links a:hover {
-            color: var(--primary);
-            padding-left: 5px;
-        }
-        
-        .social-links a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            width: 40px;
-            height: 40px;
-            background: rgba(255, 255, 255, 0.1);
-            color: var(--light);
-            border-radius: 50%;
-            margin-right: 10px;
-            transition: all 0.3s ease;
-        }
-        
-        .social-links a:hover {
-            background: var(--primary);
-            transform: translateY(-5px);
-        }
-        
-        .newsletter-form .form-control {
-            height: 50px;
-            border-radius: 50px 0 0 50px;
-            border: none;
-            padding: 0 20px;
-        }
-        
-        .newsletter-form .btn {
-            border-radius: 0 50px 50px 0;
-            background: var(--primary);
-            color: var(--light);
-            border: none;
-            padding: 0 20px;
-            transition: all 0.3s ease;
-        }
-        
-        .newsletter-form .btn:hover {
-            background: var(--primary-dark);
-        }
-        
-        .copyright {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 20px 0;
-            margin-top: 60px;
-        }
-        
-        /* Responsive */
-        @media (max-width: 991px) {
-            .hero h1 {
-                font-size: 2.8rem;
-            }
-            
-            .section-title h2 {
-                font-size: 2rem;
-            }
-        }
-        
-        @media (max-width: 767px) {
-            .hero {
-                padding: 120px 0 80px;
-            }
-            
-            .hero h1 {
-                font-size: 2.3rem;
-            }
-            
-            .section-title h2 {
-                font-size: 1.8rem;
-            }
-            
-            .services, .lead-section, .video-section, .why-us, .testimonials {
-                padding: 70px 0;
-            }
-        }
-    </style>
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digits Digital">
+    <meta name="twitter:description" content="Zimbabwe's premier digital marketing agency.">
+    <meta name="twitter:image" content="https://digitsdigital.co.zw/static/logo.png">
 </head>
+
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#"><span>Digits</span> Digital</a>
+            <a class="navbar-brand" href="#">
+                <img width="150" src="static/logo.png" alt="Digits Digital Logo">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
@@ -592,14 +85,11 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#video">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
                     <li class="nav-item"><a class="btn btn-outline-primary ms-lg-3" href="#contact">Get Started</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-
-    
 
     <!-- Hero Section -->
     <section id="home" class="hero">
@@ -612,134 +102,94 @@
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
                     <div class="position-relative">
-                        <div class="position-absolute top-0 start-0 bg-primary rounded-circle" style="width: 150px; height: 150px; opacity: 0.1;"></div>
-                        <div class="position-absolute bottom-0 end-0 bg-primary rounded-circle" style="width: 200px; height: 200px; opacity: 0.1;"></div>
+                        <div class="position-absolute top-0 start-0 bg-primary rounded-circle" style="width:150px;height:150px;opacity:.1;"></div>
+                        <div class="position-absolute bottom-0 end-0 bg-primary rounded-circle" style="width:200px;height:200px;opacity:.1;"></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services -->
     <section id="services" class="services">
         <div class="container">
             <div class="section-title">
                 <h2>Our <span class="text-primary">Digital Services</span></h2>
                 <p>We offer a comprehensive suite of digital marketing services tailored to Zimbabwean businesses</p>
             </div>
-            
+
             <div class="row">
+
+                <!-- Digital Marketing -->
                 <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Digital Marketing</h3>
-                            <p>Strategic campaigns that drive traffic, leads, and conversions. We optimize every channel for maximum ROI.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-hashtag"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Social Media Management</h3>
-                            <p>Build brand loyalty and engagement with content that resonates with your Zimbabwean audience.</p>
-                        </div>
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+                        <h3>Digital Marketing</h3>
+                        <p>Strategic campaigns that drive traffic, leads, and conversions. We optimize every channel for maximum ROI.</p>
                     </div>
                 </div>
 
+                <!-- Social Media -->
                 <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Website Design</h3>
-                            <p>Beautiful, responsive websites optimized for performance, conversions, and search engines.</p>
-                        </div>
-                    </div>
-                </div>                
-                
-                <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-pen-fancy"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Content Creation</h3>
-                            <p>Compelling content that tells your brand story and converts visitors into customers.</p>
-                        </div>
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-hashtag"></i></div>
+                        <h3>Social Media Management</h3>
+                        <p>Build brand loyalty and engagement with content tailored to the Zimbabwean audience.</p>
                     </div>
                 </div>
-                
-                
+
+                <!-- Web Design -->
                 <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>Graphic Design</h3>
-                            <p>Stunning visuals that capture attention and communicate your brand identity effectively.</p>
-                        </div>
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+                        <h3>Website Design</h3>
+                        <p>Beautiful, responsive websites optimized for conversions and SEO.</p>
                     </div>
                 </div>
-                
+
+                <!-- Content Creation -->
                 <div class="col-md-4 mb-4">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-search"></i>
-                        </div>
-                        <div class="card-body text-center">
-                            <h3>SEO Optimization</h3>
-                            <p>Rank higher on search engines and attract more qualified traffic to your website.</p>
-                        </div>
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
+                        <h3>Content Creation</h3>
+                        <p>High-impact content that turns visitors into customers.</p>
                     </div>
                 </div>
+
+                <!-- Graphic Design -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-palette"></i></div>
+                        <h3>Graphic Design</h3>
+                        <p>Stunning visuals that communicate your brand identity.</p>
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center">
+                        <div class="service-icon"><i class="fas fa-search"></i></div>
+                        <h3>SEO Optimization</h3>
+                        <p>Rank higher and attract more qualified traffic.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Lead Capture Section -->
+    <!-- Contact / Lead Form -->
     <section id="contact" class="lead-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 lead-content">
                     <h2>Ready to Transform Your Digital Presence?</h2>
-                    <p>Schedule a free 15-minute strategy session with our digital experts. We'll analyze your current approach and provide actionable insights to grow your business.</p>
-                    
-                    <!-- <div class="lead-form">
-                        <form id="customForm">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Your Name" name="entry.2005620554" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Phone Number" name="entry.1166974658" required>
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email Address" name="entry.1045781291" required>
-                            </div>
-                            <button type="submit" >Book My Free Strategy Call</button>
-                            
-                        </form>
-                        <p id="status"></p>
-                    </div> -->
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?usp=header" 
-                    class="btn btn-dark p-3 fw-bolder bs-popover-bottom">Book A Free Strategy Call</a>
+                    <p>Schedule a free 15-minute strategy session with our digital experts.</p>
 
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?usp=header"
+                       class="btn btn-dark p-3 fw-bolder">Book A Free Strategy Call</a>
 
-                    
-
-
-                   <!--  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?embedded=true"
-                     width="340" height="389" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                     -->
-                    <p class="mt-4">Prefer WhatsApp? Chat with us instantly:</p>
+                    <p class="mt-4">Prefer WhatsApp?</p>
                     <a href="https://wa.me/263776611049" class="whatsapp-btn">
                         <i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp
                     </a>
@@ -747,352 +197,83 @@
             </div>
         </div>
     </section>
-    <br>
 
-
+    <!-- Video Section -->
     <section id="video" class="video-section">
-    
         <div class="section-title">
             <h2>Digital Marketing <span class="text-primary">Insights</span></h2>
-            <p>Watch our latest tips and strategies for Zimbabwean businesses</p>
+            <p>Watch our latest marketing tips for Zimbabwean businesses</p>
         </div>
 
-        <div class="insight-video">
-            <video src="Media/Videos/Digital-Marketing-Zimbabwe.mp4" controls>
-                Video Not Available
-            </video>
+        <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.2);">
+            <iframe 
+                src="https://www.youtube.com/embed/b9HUdw67HUw"
+                title="Digital Marketing - Digits Digital"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+                style="position:absolute;top:0;left:0;width:100%;height:100%;">
+            </iframe>
         </div>
-    
-        <!-- <div class="carousel slide" id="myCarousel" data-bs-ride="carousel" >
-            
-            <div class="carousell-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3"></button>
-            </div>
-    
-           
-            <div class="carousel-inner">
-    
-               <div class="carousel-item active pe-2">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/fvIECE9nVqk" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="carousel-item pe-2">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <video src="Media/Videos/Digital-Marketing-Zimbabwe"></video>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="carousel-item pe-2">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-10">
-                            <div class="video-container">
-                                <iframe src="https://www.youtube.com/embed/o4tNnWHNPXw" title="Digital Marketing Tips for Zimbabwean Businesses" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" 
-                    style="background-color: orangered; border-radius: 50%;"
-                ></span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon"
-                style="background-color: orangered; border-radius: 50%;"
-                ></span>
-            </button>
-        </div> -->
     </section>
- 
 
-    <!-- Why Choose Us Section -->
+    <!-- Why Us -->
     <section id="why-us" class="why-us">
         <div class="container">
             <div class="section-title">
                 <h2>Why <span class="text-primary">Digits Digital</span> is the #1 Choice</h2>
-                <p>Discover why Zimbabwean businesses trust us with their digital growth</p>
+                <p>Zimbabwean businesses trust us with their digital growth</p>
             </div>
-            
+
             <div class="row">
+
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-globe-africa"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-globe-africa"></i></div>
                         <div class="feature-content">
                             <h3>Zimbabwe Market Expertise</h3>
-                            <p>We understand the unique challenges and opportunities of the Zimbabwean market, allowing us to create hyper-relevant strategies.</p>
+                            <p>We understand the local market, culture, and online behavior.</p>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-chart-pie"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
                         <div class="feature-content">
                             <h3>Data-Driven Strategies</h3>
-                            <p>Our decisions are based on analytics and performance data, not guesswork, ensuring maximum ROI for your investment.</p>
+                            <p>We base every decision on analytics, not guesswork.</p>
                         </div>
                     </div>
                 </div>
-                
-<!--                 <div class="col-md-6">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Dedicated Account Managers</h3>
-                            <p>You'll have a dedicated expert who knows your business inside out and is committed to your success.</p>
-                        </div>
-                    </div>
-                </div> -->
-                
+
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-lightbulb"></i></div>
                         <div class="feature-content">
                             <h3>Innovative Solutions</h3>
-                            <p>We stay ahead of digital trends to implement cutting-edge strategies that give you a competitive advantage.</p>
+                            <p>We implement cutting-edge digital tools to keep you ahead.</p>
                         </div>
                     </div>
                 </div>
-                
-<!--                 <div class="col-md-6">
-                    <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="feature-content">
-                            <h3>Proven Track Record</h3>
-                            <p>We've helped dozens of Zimbabwean businesses achieve remarkable growth and digital transformation.</p>
-                        </div>
-                    </div>
-                </div> -->
-                
+
                 <div class="col-md-6">
                     <div class="feature-box">
-                        <div class="feature-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
+                        <div class="feature-icon"><i class="fas fa-handshake"></i></div>
                         <div class="feature-content">
                             <h3>Transparent Reporting</h3>
-                            <p>Regular, easy-to-understand reports show exactly how your investment is performing and driving results.</p>
+                            <p>Clear, easy-to-understand performance reports.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- Testimonials -->
-    <section id="testimonials" class="testimonials"
-    style="display: none; height: 0;"
-    >
-        <div class="container">
-            <div class="section-title">
-                <h2>Client <span class="text-primary">Success Stories</span></h2>
-                <p>Don't just take our word for it - hear from our satisfied clients</p>
-            </div>
-            
-            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"Digits Digital transformed our online presence. Our website traffic increased by 180% and leads by 150% within just 3 months. Their understanding of the Zimbabwean market is unparalleled."</p>
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Tinashe Moyo">
-                                    </div>
-                                    <div>
-                                        <h5>Tinashe Moyo</h5>
-                                        <p>CEO, Harare Holdings</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"The social media campaign created by Digits Digital helped us connect with our target audience in ways we never thought possible. Engagement rates skyrocketed and sales followed!"</p>
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Rumbidzai Chikomo">
-                                    </div>
-                                    <div>
-                                        <h5>Rumbidzai Chikomo</h5>
-                                        <p>Marketing Director, ZimStyle Fashion</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="carousel-item">
-                        <div class="testimonial-card">
-                            <div class="testimonial-content">
-                                <p>"As a small business, we needed cost-effective digital solutions. Digits Digital delivered exceptional results within our budget. Their team is responsive, creative, and truly cares about our success."</p>
-                                <div class="client-info">
-                                    <div class="client-img">
-                                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Tendai Ndlovu">
-                                    </div>
-                                    <div>
-                                        <h5>Tendai Ndlovu</h5>
-                                        <p>Owner, Ndlovu Hardware</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h5>Digits Digital</h5>
-                    <p class="mb-4">Zimbabwe's premier digital marketing agency helping businesses grow and dominate their digital landscape.</p>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/share/1CMWmmcsLk/?mibextid=qi2Omg"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-4 mb-5 mb-md-0">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#video">Resources</a></li>
-                        <li><a href="#why-us">Why Choose Us</a></li>
-                        <li><a href="#testimonials">Testimonials</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-4 mb-5 mb-md-0">
-                    <h5>Contact Us</h5>
-                    <ul class="footer-links">
-                        <!-- <li><i class="fas fa-map-marker-alt me-2"></i> 123 Enterprise Road, Harare</li> -->
-                        <li><i class="fas fa-phone me-2"></i> +263 77 661 1049</li>
-                        <li><i class="fas fa-envelope me-2"></i> info@digitsdigital.co.zw</li>
-                        <li><i class="fab fa-whatsapp me-2"></i> +263 77 661 1049</li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-4">
-                    <h5>Newsletter</h5>
-                    <p class="mb-3">Subscribe for digital marketing tips and insights tailored for Zimbabwean businesses.</p>
-                    <form class="newsletter-form d-flex">
-                        <input type="email" class="form-control" placeholder="Your Email" required>
-                        <button class="btn" type="submit"><i class="fas fa-paper-plane"></i></button>
-                    </form>
-                </div>
-            </div>
-            
-            <div class="copyright text-center">
-                <p class="mb-0">&copy; 2025 Digits Digital. All Rights Reserved. Designed with <i class="fas fa-heart text-primary"></i> in Zimbabwe</p>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-  document.getElementById('customForm').addEventListener('submit', function(e) {
-    e.preventDefault(); // Prevent default reload
-
-    const form = e.target;
-    const formData = new FormData(form);
-    console.log("About to fetched")
-
-
-    fetch("https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/formResponse", {
-      method: "POST",
-      mode: "no-cors", // required
-      body: formData
-    }).then(() => {
-     console.log("Just sending now")
-      document.getElementById('status').innerText = "Submitted successfully!";
-      form.reset();
-    }).catch(() => {
-        console.log("Submitting Failed")
-      document.getElementById('status').innerText = "Submission failed.";
-    });
-  });
-</script>
-
-
-    <!-- Bootstrap JS -->
-     <script src="c:\Users\user\Bootstrap Crash Course\bootstrap-5.3.7-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- Smooth Scrolling -->
-    <script>
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Navbar background change on scroll
-        window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.style.padding = '10px 0';
-                navbar.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            } else {
-                navbar.style.padding = '20px 0';
-                navbar.style.boxShadow = 'none';
-            }
-        });
-        
-        // Testimonial carousel autoplay
-        const myCarousel = document.getElementById('testimonialCarousel');
-        const carousel = new bootstrap.Carousel(myCarousel, {
-            interval: 5000,
-            wrap: true
-        });
-    </script>
+
 </body>
 </html>
