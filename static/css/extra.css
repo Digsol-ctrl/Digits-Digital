@@ -1,0 +1,62 @@
+/* Extra lightweight UI and animation styles for Digits Digital */
+
+/* Tagline rotator */
+.tagline-rotator{display:inline-block;transition:opacity .38s ease,transform .38s ease;opacity:1}
+.tagline-rotator.fading{opacity:0;transform:translateY(6px)}
+.tagline-rotator.fade-in{opacity:1;transform:none}
+.hero-heading{line-height:1.03;font-weight:800}
+.h1-rotator{font-weight:800;display:block;margin-left:8px;font-size:1em;white-space:normal;line-height:1.05}
+/* Tagline block (placed below lead text and above CTAs): fixed 3-line height to avoid layout jumps */
+.tagline-block{min-height:calc(1.05em * 3);max-height:calc(1.05em * 3);overflow:hidden;display:flex;align-items:center;margin:.5rem 0}
+.tagline-block .tagline-rotator{display:block;font-weight:800;white-space:normal;word-break:break-word;font-size:1.15rem}
+@media (max-width:576px){
+  .tagline-block .tagline-rotator{font-size:1.05rem}
+} 
+/* CTA group responsive behavior */
+.cta-group{display:flex;gap:.6rem;flex-wrap:wrap}
+.cta-group .btn{flex:0 1 auto}
+@media (max-width:576px){
+  .h1-rotator{min-width:18ch;font-size:.95em}
+  .hero-heading{font-size:1.6rem}
+  .cta-group{flex-direction:column}
+  .cta-group .btn{width:100%}
+}
+
+/* Reveal animations */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.visible{opacity:1;transform:none}
+
+/* Service card micro-interaction */
+.service-card{background:#fff;border-radius:12px;padding:28px 18px;box-shadow:0 6px 18px rgba(15,23,42,.04);transition:transform .25s ease,box-shadow .25s ease}
+.service-icon{font-size:28px;color:#ff4500!important;margin-bottom:12px}
+.service-icon i{color:inherit}
+.feature-icon i{color:#ff4500!important}
+.service-card .btn{margin-top:10px}
+
+/* Button polish */
+.btn-outline-primary{border-width:2px}
+.btn-primary{box-shadow:0 8px 24px rgba(13,110,253,.08)}
+.btn:focus{outline:3px solid rgba(13,110,253,.12);outline-offset:3px}
+
+/* WhatsApp FAB */
+.whatsapp-fab{display:flex;align-items:center;justify-content:center;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;border:none;cursor:pointer}
+.whatsapp-fab i{transform:translateY(0);transition:transform .18s ease}
+.whatsapp-fab:hover i{transform:translateY(-2px)}
+
+/* Preloader fallback styles (in addition to inline critical styles) */
+.preloader{background:#fff}
+
+/* Responsive tweaks */
+@media (max-width:576px){
+    .service-card{padding:20px}
+    .hero h1{font-size:1.8rem}
+}
+
+@media (max-width:420px){
+    .whatsapp-fab{width:48px;height:48px;right:12px;bottom:12px}
+}
+
+/* Reduce motion respect */
+@media (prefers-reduced-motion:reduce){
+    .tagline-rotator,.reveal,.service-card,.btn{transition:none}
+}

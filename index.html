@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Digits Digital - Zimbabwe's leading digital marketing agency. Grow your brand and dominate digital with our expert services.">
+    <meta name="description" content="Digits Digital — Software, Web & Growth for Zimbabwean businesses. Build web apps, automation, and marketing that increase revenue and scale operations.">
     <meta name="keywords" content="digital marketing, Zimbabwe, social media, SEO, web design, content creation">
     <meta name="author" content="Digits Digital">
 
@@ -46,15 +46,35 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-    <!-- Google Fonts -->
+    <!-- Google Fonts (preconnect for performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
 
-    <!-- Custom CSS -->
+    <!-- Custom CSS (critical inline + async extra stylesheet) -->
     <link rel="stylesheet" href="static/css/digitsdigital.css">
+    <style>
+    /* Critical inline styles: preloader, hero tagline and quick animations */
+    :root{--brand:#0d6efd;--accent:#0d6efd}
+    .preloader{position:fixed;inset:0;background:#fff;display:flex;align-items:center;justify-content:center;z-index:9999;transition:opacity .4s ease,visibility .4s;opacity:1;visibility:visible}
+    .preloader.hidden{opacity:0;visibility:hidden;pointer-events:none}
+    .preloader .logo{width:84px;height:84px;animation:pop .9s infinite ease-in-out}
+    @keyframes pop{0%,100%{transform:scale(1)}50%{transform:scale(.92)}}
+    .hero .tagline-rotator{font-weight:600;color:var(--brand);display:inline-block;min-height:1.25em}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:none}
+    .service-card{transition:transform .25s ease,box-shadow .25s ease}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(13,110,253,.12)}
+    .btn{transition:transform .18s ease,box-shadow .18s ease}
+    .btn:active{transform:translateY(1px)}
+    .whatsapp-fab{position:fixed;right:18px;bottom:18px;background:#25D366;color:#fff;border-radius:50%;width:56px;height:56px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px rgba(0,0,0,.12);transform:translateY(30px);opacity:0;transition:opacity .4s ease,transform .4s ease;z-index:999}
+    .whatsapp-fab.visible{transform:none;opacity:1}
+    </style>
+    <link rel="preload" href="static/css/extra.css" as="style" onload="this.rel='stylesheet'">
 
     <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
     <meta property="og:title" content="Digits Digital | Zimbabwe's Premier Digital Marketing Agency">
-    <meta property="og:description" content="Grow your brand and dominate digital with data-driven marketing, social media management, and website design.">
+    <meta property="og:description" content="Build web apps, automation systems, SaaS platforms and growth marketing that increase revenue and reduce manual work.">
     <meta property="og:image" content="https://digitsdigital.co.zw/static/logo.png">
     <meta property="og:url" content="https://digitsdigital.co.zw">
     <meta property="og:type" content="website">
@@ -62,11 +82,17 @@
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Digits Digital">
-    <meta name="twitter:description" content="Zimbabwe's premier digital marketing agency.">
+    <meta name="twitter:description" content="Software, web, and growth services for Zimbabwean businesses — web apps, SaaS, and high-ROI marketing.">
     <meta name="twitter:image" content="https://digitsdigital.co.zw/static/logo.png">
+    <script defer src="static/js/main.js"></script>
 </head>
 
 <body>
+
+    <!-- Preloader -->
+    <div class="preloader" id="preloader" aria-hidden="true">
+        <img src="static/logo.png" alt="Digits Digital" class="logo" loading="lazy">
+    </div>
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
@@ -85,7 +111,7 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                     <li class="nav-item"><a class="nav-link" href="#video">Resources</a></li>
                     <li class="nav-item"><a class="nav-link" href="#why-us">Why Us</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-primary ms-lg-3" href="#contact">Get Started</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-primary ms-lg-3" href="#contact">Start Your Project</a></li>
                 </ul>
             </div>
         </div>
@@ -96,9 +122,16 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-7">
-                    <h1>Grow Your Brand <span class="text-primary">Dominate Digital.</span></h1>
-                    <p>Digits Digital is Zimbabwe's premier digital marketing agency. We help businesses like yours reach new heights with data-driven strategies and creative solutions.</p>
-                    <a href="#contact" class="btn btn-primary">Book a Free Strategy Call</a>
+                    <h1 class="hero-heading">Dominate Your Digital Space</h1>
+                    <p class="lead">Digits Digital is a results-driven digital marketing agency focused on growth.</p>
+                    <div class="tagline-block" aria-hidden="false">
+                      <span class="tagline-rotator fs-4 " aria-live="polite" aria-atomic="true">Digital Marketing • Social Media • SEO</span>
+                    </div>
+                    
+                    <div class="d-flex gap-2 cta-group" role="group" aria-label="Primary calls to action">
+                        <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
+                        <a href="#services" class="btn btn-outline-primary btn-lg">See Our Services</a>
+                    </div>
                 </div>
                 <div class="col-lg-5 d-none d-lg-block">
                     <div class="position-relative">
@@ -120,12 +153,22 @@
 
             <div class="row">
 
+                <!-- Custom Software Development -->
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center reveal">
+                        <div class="service-icon"><i class="fas fa-code"></i></div>
+                        <h3>Custom Software Development</h3>
+                        <p>Web applications, business automation systems, and SaaS platforms that reduce manual work, increase revenue, and scale your operations with secure API integrations and measurable KPIs.</p>
+                        <a class="btn btn-sm btn-primary mt-2" href="#contact">Build My Software</a>
+                    </div>
+                </div>
+
                 <!-- Digital Marketing -->
                 <div class="col-md-4 mb-4">
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                         <h3>Digital Marketing</h3>
-                        <p>Strategic campaigns that drive traffic, leads, and conversions. We optimize every channel for maximum ROI.</p>
+                        <p>Targeted campaigns that increase qualified traffic, generate consistent leads, and grow your revenue while maximizing ROI.</p>
                     </div>
                 </div>
 
@@ -134,7 +177,7 @@
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-hashtag"></i></div>
                         <h3>Social Media Management</h3>
-                        <p>Build brand loyalty and engagement with content tailored to the Zimbabwean audience.</p>
+                        <p>Engaging social campaigns that grow your audience, strengthen brand loyalty, and convert followers into customers.</p>
                     </div>
                 </div>
 
@@ -143,7 +186,7 @@
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                         <h3>Website Design</h3>
-                        <p>Beautiful, responsive websites optimized for conversions and SEO.</p>
+                        <p>Conversion-first websites that turn visitors into customers and rank well on search engines.</p>
                     </div>
                 </div>
 
@@ -152,7 +195,7 @@
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-pen-fancy"></i></div>
                         <h3>Content Creation</h3>
-                        <p>High-impact content that turns visitors into customers.</p>
+                        <p>Content that builds authority, educates customers, and drives measurable conversions.</p>
                     </div>
                 </div>
 
@@ -161,7 +204,7 @@
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-palette"></i></div>
                         <h3>Graphic Design</h3>
-                        <p>Stunning visuals that communicate your brand identity.</p>
+                        <p>Designs that strengthen your brand presence and increase conversion across campaigns and touchpoints.</p>
                     </div>
                 </div>
 
@@ -170,7 +213,7 @@
                     <div class="service-card text-center">
                         <div class="service-icon"><i class="fas fa-search"></i></div>
                         <h3>SEO Optimization</h3>
-                        <p>Rank higher and attract more qualified traffic.</p>
+                        <p>Improve organic visibility and attract high-intent visitors who are likely to convert.</p>
                     </div>
                 </div>
 
@@ -187,10 +230,10 @@
                     <p>Schedule a free 15-minute strategy session with our digital experts.</p>
 
                     <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5Nb8nVpOmsiaOZdJI3evTYqQS2n4QiDX9dIUt0g9CtU0SEg/viewform?usp=header"
-                       class="btn btn-dark p-3 fw-bolder">Book A Free Strategy Call</a>
+                       class="btn btn-dark p-3 fw-bolder">Start Your Project</a>
 
                     <p class="mt-4">Prefer WhatsApp?</p>
-                    <a href="https://wa.me/263776611049" class="whatsapp-btn">
+                    <a href="https://wa.me/263776611049?text=Hi%20Digits%20Digital%2C%20I%27m%20interested%20in%20your%20digital%20services." class="whatsapp-btn">
                         <i class="fab fa-whatsapp me-2"></i> Chat on WhatsApp
                     </a>
                 </div>
@@ -206,10 +249,11 @@
         </div>
 
         <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;border-radius:16px;box-shadow:0 4px 12px rgba(0,0,0,.2);">
-            <iframe 
-                src="https://www.youtube.com/embed/b9HUdw67HUw"
+            <iframe class="lazy-iframe"
+                data-src="https://www.youtube.com/embed/b9HUdw67HUw"
                 title="Digital Marketing - Digits Digital"
                 frameborder="0"
+                loading="lazy"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
                 style="position:absolute;top:0;left:0;width:100%;height:100%;">
@@ -272,8 +316,42 @@
     </section>
 
 
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <img src="static/logo.png" alt="Digits Digital" width="140" loading="lazy">
+            <p class="mt-3">Digits Digital — a results-driven digital marketing agency helping Zimbabwean businesses grow through marketing, websites and software.</p>
+            <a href="#contact" class="btn btn-outline-light btn-sm mt-2">Start Your Project</a>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Services</h5>
+            <ul class="list-unstyled">
+              <li><a href="#services" class="text-light">Digital Marketing</a></li>
+              <li><a href="#services" class="text-light">Social Media</a></li>
+              <li><a href="#services" class="text-light">Website Design</a></li>
+              <li><a href="#services" class="text-light">Custom Software</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 mb-3">
+            <h5>Contact</h5>
+            <p><strong>Phone:</strong> +263 776 611 049</p>
+            <p><strong>Email:</strong> hello@digitsdigital.co.zw</p>
+            <p>Follow us: <a href="#" class="text-light"><i class="fab fa-facebook me-2"></i></a><a href="#" class="text-light"><i class="fab fa-linkedin-in me-2"></i></a></p>
+          </div>
+        </div>
+        <div class="text-center mt-4 small text-muted">© 2025 Digits Digital. All rights reserved.</div>
+      </div>
+    </footer>
+
+    <!-- WhatsApp FAB -->
+    <a id="whatsappFab" class="whatsapp-fab" href="https://wa.me/263776611049?text=Hi%20Digits%20Digital%2C%20I%27m%20interested%20in%20your%20digital%20services." target="_blank" rel="noopener" aria-label="Chat with us on WhatsApp">
+        <i class="fab fa-whatsapp fa-lg"></i>
+    </a>
+
     <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 </body>
 </html>
