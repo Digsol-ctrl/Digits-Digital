@@ -1,3 +1,18 @@
+  // Ripple effect for .btn-live
+  function setupLiveButtonRipple() {
+    document.querySelectorAll('.btn-live').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const rect = btn.getBoundingClientRect();
+        const ripple = document.createElement('span');
+        ripple.className = 'ripple';
+        ripple.style.left = (e.clientX - rect.left) + 'px';
+        ripple.style.top = (e.clientY - rect.top) + 'px';
+        ripple.style.width = ripple.style.height = Math.max(rect.width, rect.height) + 'px';
+        btn.appendChild(ripple);
+        setTimeout(() => ripple.remove(), 600);
+      });
+    });
+  }
 // Lightweight UI interactions for Digits Digital — no frameworks, minimal footprint
 (function(){
   'use strict';
@@ -96,6 +111,49 @@
     });
   }
 
+  // Animated Counters for Construction Portfolio
+  function animateCounter(id, end, duration) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    let start = 0;
+    const step = Math.ceil(end / (duration / 18));
+    function update() {
+      start += step;
+      if (start >= end) {
+        el.textContent = end;
+      } else {
+        el.textContent = start;
+        requestAnimationFrame(update);
+      }
+    }
+    update();
+  }
+
+  // Smooth scroll for portfolio CTA
+  function setupPortfolioScroll() {
+    document.querySelectorAll('a[href^="#construction-portfolio-grid"]').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        const target = document.getElementById('construction-portfolio-grid');
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  }
+
+  // Card CTA micro-interaction
+  function setupCardCtaHover() {
+    document.querySelectorAll('.btn-live').forEach(btn => {
+      btn.addEventListener('mouseenter', function() {
+        btn.classList.add('hovered');
+      });
+      btn.addEventListener('mouseleave', function() {
+        btn.classList.remove('hovered');
+      });
+    });
+  }
+
   // Init
   document.addEventListener('DOMContentLoaded', function(){
     if(!prefersReducedMotion()){
@@ -105,6 +163,13 @@
     setupObservers();
     setupWhatsAppFab();
     lazyImages();
+    // Construction Portfolio enhancements
+    animateCounter('counter-sites', 10, 1200);
+    animateCounter('counter-industries', 3, 1200);
+    animateCounter('counter-businesses', 9, 1200);
+    setupPortfolioScroll();
+    setupCardCtaHover();
+    setupLiveButtonRipple();
   });
 
 })();
